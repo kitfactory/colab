@@ -11,13 +11,13 @@ from tftk import ENABLE_SUSPEND_RESUME_TRAIN, IS_SUSPEND_RESUME_TRAIN, ResumeExe
 
 if __name__ == '__main__':
 
-    context = Context.init_context()
+    context = Context.init_context({Context.TRAINING_NAME:"20200519141141"}  #   .TRAINING_NAME:})
     ENABLE_SUSPEND_RESUME_TRAIN()
 
     BATCH_SIZE = 500
     CLASS_NUM = 10
     IMAGE_SIZE = 28
-    EPOCHS = 2
+    EPOCHS = 6
     SHUFFLE_SIZE = 1000
     
     train, train_len = Mnist.get_train_dataset()
