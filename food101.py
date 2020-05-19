@@ -41,4 +41,3 @@ if __name__ == '__main__':
     model = KerasResNet50V2.get_model(input_shape=(IMAGE_SIZE,IMAGE_SIZE,CHANNELS),classes=CLASS_NUM) # resnest=True,resnet_c=True,resnet_d=True,mish=True)
     callbacks = CallbackBuilder.get_callbacks(tensorboard=False, consine_annealing=False, reduce_lr_on_plateau=True,reduce_patience=5,reduce_factor=0.25,early_stopping_patience=8)
     ImageTrain.train_image_classification(train_data=train,train_size=train_len,batch_size=BATCH_SIZE,validation_data=validation,validation_size=validation_len,shuffle_size=SHUFFLE_SIZE,model=model,callbacks=callbacks,optimizer=optimizer,loss="categorical_crossentropy",max_epoch=EPOCHS)
-
