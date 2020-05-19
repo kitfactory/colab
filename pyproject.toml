@@ -6,6 +6,7 @@ authors = ["kitfactory <kitfactory@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.6"
+tftk = "^0.1.4"
 
 [tool.poetry.dev-dependencies]
 pytest = "^4.6"
