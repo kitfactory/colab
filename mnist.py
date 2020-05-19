@@ -17,7 +17,7 @@ if __name__ == '__main__':
     BATCH_SIZE = 500
     CLASS_NUM = 10
     IMAGE_SIZE = 28
-    EPOCHS = 6
+    EPOCHS = 20
     SHUFFLE_SIZE = 1000
     
     train, train_len = Mnist.get_train_dataset()
